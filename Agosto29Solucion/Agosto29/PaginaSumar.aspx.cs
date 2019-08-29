@@ -14,15 +14,21 @@ namespace Agosto29
 
     }
 
+    // evento = funcion que trabaja bajo una accion
+
     protected void Button1_Click(object sender, EventArgs e)
     {
+      // conversion de numero a texto
+
+
+
       // leer los cuadros de texto
-      string numero1=TextBox1.Text;
-      string numero2=TextBox2.Text;
+      int numero1 = Convert.ToInt32(  TextBox1.Text); // Convert
+      int numero2 = Int32.Parse(TextBox2.Text);
       // sumar.
-      string sumar=numero1+numero2;
+      int sumar=numero1+numero2;
       // mostrar la suma en el objeto label.
-      Label1.Text=sumar;
+      Label1.Text=sumar.ToString();
 
 
     }
